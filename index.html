@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메인 화면</title>
+    <link rel="stylesheet" href="font.css">
+    <style>
+        a { text-decoration: none; color:black}
+        a:visited { text-decoration: none;}
+        a:hover { text-decoration: none;}
+        a:focus { text-decoration: none;}
+        a:hover, a:active { text-decoration: none;}
+        details{margin-bottom:10px;}
+        details summary{padding:0 10px; background:#000; color:#fff; height:35px; line-height:35px; font-weight:bold; cursor:pointer;}
+        details summary::marker{font-size:0;}
+        details ul{border:1px solid #aaa;}
+        details ul li a{display:block; padding:5px 10px;}
+        details ul li a:hover{background:#333; color:#fff;}
+        details .txt{border:1px solid #999; padding:5px 10px; text-align:center;}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div id="header" role="banner"> <!--상단 헤더-->
+            <div class="header1">
+                <div class="header2">
+                    <div style="float:left; height:80px;">
+                        <div>
+                            <p>현재 시간</p>
+                            <p id="clock"></p>
+                        </div>
+                    </div>
+                    <div class="title1">
+                        <p>집에가고싶다</p>
+                    </div>     
+                </div>
+            </div>
+        </div>
+        <div id="nav" role="navigation"> <!-- nav 영역 -->
+            <div class="nav1">
+                <div class="nav2">
+                    <ul class="nav3">
+                        <a href="movie.html" target="_self"><li class="nav4">영화</li></a>
+                        <a href="map.html" target="_self"><li class="nav4">지도</li></a>
+                        <a href="100monster.html" target="_self"><li class="nav4">백과사전</li></a>
+                        <a href="shopping.html" target="_self"><li class="nav4">쇼핑</li></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="section" style="display: table; text-align: center;">
+            <div style="padding: 20px 0px 0px 0px; border-bottom: 1px solid #ddd">
+                <P> 명언이 지나갑니다!</P>
+                <br>
+                <div id="quote">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <br>
+            <br>
+            <p>오느르운세</p>
+            <br>
+            <div>
+                <form action="https://www.unsin.co.kr/unse/free/todayline/form" target="_blank" method="GET">
+                    <select id="select" name="linenum">
+                        <option value="1">토끼띠</option>
+                        <option value="2">용띠</option>
+                        <option value="3">뱀띠</option>
+                        <option value="4">말띠</option>
+                        <option value="5">양띠</option>
+                        <option value="6">원숭이띠</option>
+                        <option value="7">닭띠</option>
+                        <option value="8">개띠</option>
+                        <option value="9">돼지띠</option>
+                        <option value="10">쥐띠</option>
+                        <option value="11">소띠</option>
+                        <option value="0">범띠</option>
+                    </select>
+                    <button type="submit">검색</button>
+                </form>
+            </div>
+        </div>
+        <!-- <div id="footer">   
+            <p>dpddpd</p>
+        </div> -->
+    </div>
+    <script src="js/clock.js"></script>
+    <script src="js/comment.js"></script>
+    
+</body>
+</html>
