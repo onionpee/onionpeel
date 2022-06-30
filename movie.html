@@ -54,17 +54,28 @@
         <div id="section">
             <div class="section1">
                 <div id="section2" style="display: table; text-align: center; padding: 10px;"> <!-- 문단 좌측 구역-->
-                    <a href="http://www.cgv.co.kr/" target="_blank">
-                        <img src="maps/cgv.png" height="300px" width="300px">
-                    </a>
+                    <button id="show"><img src="maps/cgv.png" height="300px" width="300px"></button>
+                    <div class="background">
+                        <div class="window">
+                            <div class="popup">
+                                <br>
+                                <button id="close" class="btn">닫기</button><br>
+                                <br>
+                                <iframe width="800" height="600" src="https://www.youtube.com/embed/Nkc3HLmDTro" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <br>
+                                <br>
+                                <a href="http://www.cgv.co.kr/" target="_blank">아 ! 영화보고싶다</a>
+                            </div>
+                        </div>
+                    </div>
                     <p>CGV - 해당 이미지 선택 시 홈으로 이동됩니다.</p>
                     <br>
                     <br>
                     <p>빠른 검색</p>
                     <br>
                     <form action="http://www.cgv.co.kr/search/" target="_blank" method="GET">
-                        <input type="text" name="query" value=""></input>
-                        <button type="submit">검색</button>
+                        <input class="ipip" type="text" name="query" value=""></input>
+                        <button class="btn" type="submit">검색</button>
                     </form>
                     <br>
                     <details>
@@ -87,8 +98,8 @@
                     <p>빠른 검색</p>
                     <br>
                     <form action="https://www.megabox.co.kr/movie" target="_blank" method="GET">
-                        <input type="text" name="searchText" value=""></input>
-                        <button type="submit">검색</button>
+                        <input class="ipip" type="text" name="searchText" value=""></input>
+                        <button class="btn" type="submit">검색</button>
                     </form>
                     <br>
                     <details>
@@ -113,5 +124,6 @@
             
         </div> -->
 <script src="js/clock.js"></script>
+<script src="js/test.js"></script>
 </body>
 </html>
